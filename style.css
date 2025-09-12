@@ -100,15 +100,11 @@ body {
 }
 
 .section {
-    display: none;
     min-height: calc(100vh - 80px);
     padding: 60px 0;
 }
 
-.section.active {
-    display: block;
-}
-
+/* Section Titles */
 .section-title {
     font-size: 2.5rem;
     font-weight: 300;
