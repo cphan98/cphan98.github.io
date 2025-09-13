@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
+<body class="home-page">
+    <!-- Top Navbar (desktop) -->
+    <nav class="nav top-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Your Name</a>
             <ul class="nav-menu">
@@ -26,33 +24,31 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <main class="main-content">
-        <section class="section active">
+    <!-- Home Section (fills entire viewport) -->
+    <main class="main-content fill-screen">
+        <section class="section">
             <div class="container">
                 <div class="hero">
                     <h1 class="hero-title">Hello, I'm Your Name</h1>
                     <p class="hero-subtitle">Creative Professional & Problem Solver</p>
-                    <p class="hero-description">I create beautiful, functional experiences that make a difference.</p>
+                    <p class="hero-description">
+                        I create beautiful, functional experiences that make a difference.
+                    </p>
                     <a href="work.html" class="cta-button">View My Work</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Bottom Navbar (mobile/tablet only) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-link active">Home</a>
+        <a href="about.html" class="bottom-nav-link">About</a>
+        <a href="work.html" class="bottom-nav-link">Work</a>
+        <a href="resume.html" class="bottom-nav-link">Resume</a>
+        <a href="contact.html" class="bottom-nav-link">Contact</a>
+    </nav>
 
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Your Name</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Include same navbar as index.html -->
+    <!-- Top Navbar (desktop) -->
+    <nav class="nav top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Your Name</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <main class="main-content">
+    <!-- About Content -->
+    <main class="main-content fill-screen">
         <section class="section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>I'm a passionate creative professional with a love for clean design and thoughtful user
-                            experiences.</p>
-                        <p>When I'm not working, you can find me exploring new technologies or enjoying a good book.</p>
+                        <p>I'm a passionate creative professional with a love for clean design and thoughtful user experiences.</p>
+                        <p>When I'm not working, you can find me exploring new technologies, traveling to inspiring places, or enjoying a good book.</p>
                     </div>
                     <div class="about-image">
                         <img src="https://via.placeholder.com/400x400" alt="Your Name" />
@@ -29,7 +42,15 @@
         </section>
     </main>
 
-    <!-- Footer same as index.html -->
-</body>
+    <!-- Bottom Navbar (mobile/tablet) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-link">Home</a>
+        <a href="about.html" class="bottom-nav-link active">About</a>
+        <a href="work.html" class="bottom-nav-link">Work</a>
+        <a href="resume.html" class="bottom-nav-link">Resume</a>
+        <a href="contact.html" class="bottom-nav-link">Contact</a>
+    </nav>
 
+    <script src="script.js"></script>
+</body>
 </html>

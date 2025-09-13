@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Your Name</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-    <!-- Navbar -->
+    <!-- Top Navbar (desktop) -->
+    <nav class="nav top-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Your Name</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../work.html" class="nav-link active">Work</a></li>
+                <li><a href="../resume.html" class="nav-link">Resume</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <main class="main-content">
+    <!-- Project Content -->
+    <main class="main-content fill-screen">
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Project Title 1</h2>
-                <img src="https://via.placeholder.com/800x500" alt="Project Image">
-                <p>Detailed description of this project.</p>
+                <img src="https://via.placeholder.com/800x500" alt="Project 1 Image" class="project-image">
+                <p class="project-description">
+                    This is a detailed description of Project 1. 
+                    Explain the problem you solved, the tools and technologies you used, 
+                    and what impact the project had. 
+                    You can also include challenges faced and how you overcame them.
+                </p>
+                <p class="project-tech">
+                    <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Node.js
+                </p>
                 <a href="../work.html" class="cta-button">← Back to Work</a>
             </div>
         </section>
     </main>
-</body>
 
+    <!-- Bottom Navbar (mobile/tablet) -->
+    <nav class="bottom-nav">
+        <a href="../index.html" class="bottom-nav-link">Home</a>
+        <a href="../about.html" class="bottom-nav-link">About</a>
+        <a href="../work.html" class="bottom-nav-link active">Work</a>
+        <a href="../resume.html" class="bottom-nav-link">Resume</a>
+        <a href="../contact.html" class="bottom-nav-link">Contact</a>
+    </nav>
+
+    <script src="../script.js"></script>
+</body>
 </html>

@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Your Name</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <main class="main-content">
+    <!-- Top Navbar (desktop) -->
+    <nav class="nav top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Your Name</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="work.html" class="nav-link">Work</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Content -->
+    <main class="main-content fill-screen">
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Resume</h2>
@@ -21,22 +36,52 @@
                             <h4>Senior Designer</h4>
                             <span class="resume-date">2022 - Present</span>
                             <span class="resume-company">Amazing Company</span>
-                            <p>Leading design initiatives.</p>
+                            <p>Leading design initiatives and creating user-centered solutions for complex problems.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Designer</h4>
+                            <span class="resume-date">2020 - 2022</span>
+                            <span class="resume-company">Great Agency</span>
+                            <p>Designed and developed digital experiences for clients across industries.</p>
                         </div>
                     </div>
+
                     <div class="resume-section">
                         <h3>Education</h3>
                         <div class="resume-item">
                             <h4>Bachelor of Design</h4>
                             <span class="resume-date">2016 - 2020</span>
                             <span class="resume-company">University Name</span>
-                            <p>Focused on digital design and UX principles.</p>
+                            <p>Focused on digital design and user experience principles.</p>
                         </div>
                     </div>
+
+                    <div class="resume-section">
+                        <h3>Skills</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe Creative Suite</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="cta-button">Download PDF Resume</a>
                 </div>
             </div>
         </section>
     </main>
-</body>
 
+    <!-- Bottom Navbar (mobile/tablet) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-link">Home</a>
+        <a href="about.html" class="bottom-nav-link">About</a>
+        <a href="work.html" class="bottom-nav-link">Work</a>
+        <a href="resume.html" class="bottom-nav-link active">Resume</a>
+        <a href="contact.html" class="bottom-nav-link">Contact</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
 </html>
