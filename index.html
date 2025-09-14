@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="home-page">
-    <!-- Top Navbar (desktop) -->
-    <nav class="nav top-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Your Name</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="work.html" class="nav-link">Work</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Name - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <!-- Home Section (fills entire viewport) -->
-    <main class="main-content fill-screen">
-        <section class="section">
-            <div class="container">
-                <div class="hero">
-                    <h1 class="hero-title">Hello, I'm Your Name</h1>
-                    <p class="hero-subtitle">Creative Professional & Problem Solver</p>
-                    <p class="hero-description">
-                        I create beautiful, functional experiences that make a difference.
-                    </p>
-                    <a href="work.html" class="cta-button">View My Work</a>
+    <body class="home-page">
+        <!-- top nav bar (desktop) -->
+        <nav class="top-nav">
+            <div class="top-nav-container">
+                <div class="top-nav-content">
+                    <a href="index.html" class="top-nav-logo margot-h1">cynthia phan</a>
+                    <ul class="top-nav-menu">
+                        <li><a href="about.html" class="top-nav-link">about me</a></li>
+                        <li><a href="work.html" class="top-nav-link">work</a></li>
+                        <li><a href="resume.html" class="top-nav-link">resume</a></li>
+                        <li><a href="contact.html" class="top-nav-link">contact</a></li>
+                    </ul>
+                </div>
+                <hr class="top-nav-divider">
+            </div>
+        </nav>
+
+        <main class="main-content fill-screen centered">
+            <div class="main-content-title-container">
+                <h1 class="margot-title">cynthia phan</h1>
+                <p class="quicksand-subtitle">ui/ux designer & student</p>
+            </div>
+            <p class="quicksand-large-semibold">
+                hi i'm a computer science student graduating december 2025. i'm actively seeking ui/ux designer roles. i love taking problems and making them feel simple, intuitive, and beautiful.
+            </p>
+        </main>
+
+        <!-- bottom nav bar (mobile) -->
+        <nav class="bottom-nav">
+            <div class="bottom-nav-container">
+                <hr class="bottom-nav-divider">
+                <div class="bottom-nav-content">
+                    <a href="index.html" class="bottom-nav-link active">
+                        <div class="bottom-nav-link-container">
+                            <span class="bottom-nav-icon home-icon"></span>
+                            <p>home</p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="bottom-nav-link">
+                        <div class="bottom-nav-link-container">
+                            <span class="bottom-nav-icon about-icon"></span>
+                            <p>about</p>
+                        </div>
+                    </a>
+                    <a href="work.html" class="bottom-nav-link">
+                        <div class="bottom-nav-link-container">
+                            <span class="bottom-nav-icon work-icon"></span>
+                            <p>work</p>
+                        </div>
+                    </a>
+                    <a href="resume.html" class="bottom-nav-link">
+                        <div class="bottom-nav-link-container">
+                            <span class="bottom-nav-icon resume-icon"></span>
+                            <p>resume</p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="bottom-nav-link">
+                        <div class="bottom-nav-link-container">
+                            <span class="bottom-nav-icon contact-icon"></span>
+                            <p>contact</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </nav>
 
-    <!-- Bottom Navbar (mobile/tablet only) -->
-    <nav class="bottom-nav">
-        <a href="index.html" class="bottom-nav-link active">Home</a>
-        <a href="about.html" class="bottom-nav-link">About</a>
-        <a href="work.html" class="bottom-nav-link">Work</a>
-        <a href="resume.html" class="bottom-nav-link">Resume</a>
-        <a href="contact.html" class="bottom-nav-link">Contact</a>
-    </nav>
-
-    <script src="script.js"></script>
-</body>
+        <!-- script -->
+        <script src="script.js"></script>
+    </body>
 </html>
