@@ -242,7 +242,7 @@ hr.top-nav-divider {
     transition: color 0.3s ease;
     font-family: "Quicksand", sans-serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     font-style: normal;
 }
@@ -282,6 +282,7 @@ hr.bottom-nav-divider {
 }
 
 .bottom-nav-link {
+    font-family: "Quicksand", sans-serif;
     text-decoration: none;
     color: var(--moss-green);
     font-size: 12px;
@@ -392,44 +393,42 @@ body.contact-page {
     margin-top: 114px;
 }
 
-.home-page .main-content-title-container {
+.home-page .main-content-title-container,
+.contact-page .main-content-title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.home-page .main-content-title-container .quicksand-subtitle {
+.home-page .main-content-title-container .quicksand-subtitle,
+.contact-page .main-content-title-container .quicksand-subtitle {
     color: var(--tan);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hero Section */
-.cta-button {
-    display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+.contact-page .contact-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
-.cta-button:hover {
-    background-color: #555;
-    transform: translateY(-2px);
+.contact-page .contact-link-container a {
+    text-decoration: underline;
+    color: var(--moss-green);
+}
+
+.contact-page .contact-link-container a:hover {
+    text-decoration: none;
+    color: var(--tan);
+    transition: ease-in-out 0.3s;
+}
+
+.contact-page .contact-link-container .circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--moss-green);
 }
 
 /* responsive behaviour */
@@ -468,20 +467,6 @@ body.contact-page {
     }
 
     /* hide top nav + show bottom nav on mobile */
-    .top-nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 80px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-        gap: 1rem;
-    }
-
     .top-nav {
         display: none;
     }
