@@ -6,7 +6,7 @@
         <title>Resume - Your Name</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="resume-page">
         <!-- top nav bar (desktop) -->
         <nav class="top-nav">
             <div class="top-nav-container">
@@ -23,52 +23,284 @@
             </div>
         </nav>
 
-        <!-- Resume Content -->
-        <main class="main-content fill-screen">
-            <section class="section">
-                <div class="container">
-                    <h2 class="section-title">Resume</h2>
-                    <div class="resume-content">
-                        <div class="resume-section">
-                            <h3>Experience</h3>
-                            <div class="resume-item">
-                                <h4>Senior Designer</h4>
-                                <span class="resume-date">2022 - Present</span>
-                                <span class="resume-company">Amazing Company</span>
-                                <p>Leading design initiatives and creating user-centered solutions for complex problems.</p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Designer</h4>
-                                <span class="resume-date">2020 - 2022</span>
-                                <span class="resume-company">Great Agency</span>
-                                <p>Designed and developed digital experiences for clients across industries.</p>
-                            </div>
+        <main class="main-content fill-screen centered">
+            <!-- header -->
+            <section class="header">
+                <div class="header-container">
+                    <div class="title-container">
+                        <h1 class="margot-h1">cynthia phan</h1>
+                        <div class="details-container">
+                            <p class="quicksand-large-bold">student, ui/ux designer</p>
+                            <p class="quicksand-large-bold">|</p>
+                            <p class="quicksand-large-bold">montréal, qc</p>
                         </div>
-
-                        <div class="resume-section">
-                            <h3>Education</h3>
-                            <div class="resume-item">
-                                <h4>Bachelor of Design</h4>
-                                <span class="resume-date">2016 - 2020</span>
-                                <span class="resume-company">University Name</span>
-                                <p>Focused on digital design and user experience principles.</p>
-                            </div>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Skills</h3>
-                            <div class="skills-list">
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">HTML/CSS</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">Adobe Creative Suite</span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="cta-button">Download PDF Resume</a>
                     </div>
+                    <a href="media/Cynthia_Phan_Resume.pdf" target="_blank" rel="noopener noreferrer" title="view cynthia's pdf resume in a new tab" aria-label="cynthia's pdf resume, opens in a new tab">
+                        <div class="download-button-container">
+                            <span class="download-icon"></span>
+                            <p class="quicksand-small-semibold">download resume (pdf)</p>
+                        </div>
+                    </a>
                 </div>
+                <hr class="header-divider">
+            </section>
+
+            <!-- introduction -->
+            <section class="intro">
+                <p class="quicksand-normal-semibold">
+                    a ui/ex designer with a computer science background actively seeking a full-time role! i'm passionate about blending my technical knowledge and creative skills to build web experiences that are not only beautiful but also intuitive for everyone.
+                </p>
+            </section>
+
+            <!-- work experience -->
+            <section class="work-experience">
+                <h3 class="section-title margot-h3">work experience</h3>
+                <section class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">web development intern</h4>
+                    <div class="details-container">
+                        <p class="quicksand-normal-semibold">exo - metropolitan transportation network</p>
+                        <p class="quicksand-normal-semibold">|</p>
+                        <p class="quicksand-normal-semibold">september, 2024 - present</p>
+                    </div>
+                    <ul class="subsection-list">
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                implement responsive web content, including articles and landing pages, using html and css within orchard cms.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                design and integrate figma prototypes for new digital content, ensuring a seamless translation from design to development.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                conduct quality assurance and accessibility testing on web content to ensure a consistent, flawless user experience.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                manage the integration and distribution of email newsletter, using microsoft dynamics 365.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">medical technologist</h4>
+                    <div class="details-container">
+                        <p class="quicksand-normal-semibold">chum - centre hospitalier de l'université de montréal</p>
+                        <p class="quicksand-normal-semibold">|</p>
+                        <p class="quicksand-normal-semibold">june, 2021 - march, 2022</p>
+                    </div>
+                    <ul class="subsection-list">
+                        <li>
+                            <p class="quicksand-normal-regular">verify and ensure the integrity of data before release.</p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">identify and verify the integrity of biological specimens, ensuring accuracy and precision.</p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">perform quality control and quality assurance to maintain high standards of operation.</p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">troubleshoot and operate highly specialized equipments.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- projects -->
+            <section class="projects">
+                <h3 class="section-title margot-h3">projects</h3>
+                <div class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">creating a claim request landing page & form</h4>
+                    <div class="details-container">
+                        <p class="quicksand-normal-semibold">exo - metropolitan transportation network</p>
+                        <p class="quicksand-normal-semibold">|</p>
+                        <p class="quicksand-normal-semibold">september, 2025</p>
+                    </div>
+                    <ul class="subsection-list">
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                develop the information architecture for the landing page, ensuring all necessary information for filing a claim were clearly presented and easy to find.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                adhere to stakeholders' (customer service and legal teams) needs and requirements through iterative design and commmunication.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                integrate the landing page on orchard cms, using html and css, ensuring a seamless and responsive experience across all devices.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">user-focused search: integrating paratransit carriers</h4>
+                    <div class="details-container">
+                        <p class="quicksand-normal-semibold">exo - metropolitan transportation network</p>
+                        <p class="quicksand-normal-semibold">|</p>
+                        <p class="quicksand-normal-semibold">may, 2025</p>
+                    </div>
+                    <ul class="subsection-list">
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                improve information architecture by categorizing carriers into 'public transit' and 'paratransit' to enhance content organization and user findability.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                enhance search functionality to allow for tageted searches by carrier type, reducing user friction and improving efficiency.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                design a new, intuitive user interface for the carrier list, creating a clearer visual hierarchy and a simplified user experience.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">creating a landing page for a marketing campaign: exo moments</h4>
+                    <div class="details-container">
+                        <p class="quicksand-normal-semibold">exo - metropolitan transportation network</p>
+                        <p class="quicksand-normal-semibold">|</p>
+                        <p class="quicksand-normal-semibold">september, 2024</p>
+                    </div>
+                    <ul class="subsection-list">
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                apply creative and problem-solving skills to create unique, responsive design solutions addressing the marketing team's specific needs and requirements.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                balance creativity with usability to ensure visually appealing elements enhance user experience.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="quicksand-normal-regular">
+                                integrate the landing page on orchard cms using html and css.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section class="skills">
+                <h3 class="section-title margot-h3">skills</h3>
+                <div class="skills-container">
+                    <section class="skills-category">
+                        <h4 class="skills-subtitle quicksand-large-bold">soft skills</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <p class="quicksand-normal-regular">human-centered design</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">collaborative</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">communication</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">creativity & visual design</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">organized</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">problem-solving</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills-category">
+                        <h4 class="skills-subtitle quicksand-large-bold">hard skills</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <p class="quicksand-normal-regular">user interface design</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">user experience strategy</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">user research & analysis</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">prototyping & wireframing</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">information architecture</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">accessibility standards</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">usability testing</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">iterative design</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills-category">
+                        <h4 class="skills-subtitle quicksand-large-bold">tools</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <p class="quicksand-normal-regular">miro</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">figma</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">orchard cms</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">microsoft dynamics 365</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">git</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">github</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">html</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">css</p>
+                            </li>
+                            <li>
+                                <p class="quicksand-normal-regular">vscode</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <!-- education -->
+            <section class="education">
+                <h3 class="section-title margot-h3">education</h3>
+                <section class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">university of montréal</h4>
+                    <p class="degree-subject quicksand-normal-semibold">bachelor of arts and sciences</p>
+                    <div class="details-container">
+                        <p class="quicksand-normal-regular">montréal, qc</p>
+                        <p class="quicksand-normal-regular">|</p>
+                        <p class="quicksand-normal-regular">december, 2025</p>
+                    </div>
+                </section>
+                <section class="subsection">
+                    <h4 class="subsection-title quicksand-large-bold">dawson college</h4>
+                    <p class="degree-subject quicksand-normal-semibold">biomedical laboratory technology</p>
+                    <div class="details-container">
+                        <p class="quicksand-normal-regular">montréal, qc</p>
+                        <p class="quicksand-normal-regular">|</p>
+                        <p class="quicksand-normal-regular">june, 2021</p>
+                    </div>
+                </section>
             </section>
         </main>
 

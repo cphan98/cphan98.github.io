@@ -192,6 +192,29 @@ html, body {
     background-color: var(--off-white);
 }
 
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-indent: -16px;
+    padding-left: 20px;
+}
+
+li::before {
+    content: '•';
+    font-size: 20px;
+    line-height: normal;
+    vertical-align: middle;
+    color: var(--cafe-noir);
+}
+
+li>p {
+    display: inline;
+}
+
 /* top navigation bar */
 .top-nav {
     position: fixed;
@@ -213,7 +236,7 @@ html, body {
     align-items: center;
 }
 
-hr.top-nav-divider {
+.top-nav-divider {
     border: none;
     height: 1px;
     background-color: var(--bone);
@@ -234,6 +257,15 @@ hr.top-nav-divider {
     display: flex;
     list-style: none;
     gap: 50px;
+}
+
+.top-nav-menu li {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+.top-nav-menu li::before {
+    content: '';
 }
 
 .top-nav-link {
@@ -269,7 +301,7 @@ hr.top-nav-divider {
     padding: 20px 30px 30px 30px;
 }
 
-hr.bottom-nav-divider {
+.bottom-nav-divider {
     border: none;
     height: 1px;
     background-color: var(--bone);
@@ -384,7 +416,7 @@ hr.bottom-nav-divider {
     text-align: center;
     align-items: center;
     justify-content: center;
-}
+    }
 
 .main-content.fill-screen {
     height: calc(100vh - 114px);
@@ -451,7 +483,126 @@ hr.bottom-nav-divider {
 
 .about-page .description-container p {
     margin-bottom: 16px;
-    text-align: left;
+    text-align: start;
+}
+
+.resume-page .main-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    height: fit-content;
+}
+
+.resume-page .details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.resume-page .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume-page .header .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-page .header .title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume-page .header .title-container h1 {
+    color: var(--moss-green);
+}
+
+.resume-page .header a {
+    text-decoration: none;
+    color: var(--espresso);
+}
+
+.resume-page .header .download-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid var(--kombu-green);
+    border-radius: 50px;
+}
+
+.resume-page .header .download-button-container:hover {
+    background-color: var(--kombu-green);
+    transition: ease-in-out 0.3s;
+    color: var(--off-white);
+}
+
+.resume-page .header .download-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url('media/icons/download.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.resume-page .header .download-button-container:hover .download-icon {
+    background-image: url('media/icons/download-hover.png');
+    transition: ease-in-out 0.3s;
+}
+
+.resume-page .work-experience,
+.resume-page .projects,
+.resume-page .skills,
+.resume-page .education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.resume-page .section-title {
+    color: var(--kombu-green);
+}
+
+.resume-page .subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.resume-page .subsection-title {
+    color: var(--cafe-noir);
+}
+
+.resume-page .skills .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.resume-page .skills .skills-container .skills-category {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.resume-page .skills .skills-list li {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+.resume-page .skills .skills-list li::before {
+    content: '';
 }
 
 .contact-page .contact-link-container {
@@ -514,6 +665,43 @@ hr.bottom-nav-divider {
     .about-page .description-container {
         overflow-y: visible;
     }
+
+    .resume-page .skills .skills-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* main content */
+    .resume-page .header .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resume-page .header .title-container {
+        width: 100%;
+    }
+
+    .resume-page .header h1 {
+        text-align: center;
+    }
+
+    .resume-page .header .details-container {
+        justify-content: center;
+    }
+
+    .resume-page .work-experience .details-container,
+    .resume-page .projects .details-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .resume-page .work-experience .details-container>p:nth-child(2),
+    .resume-page .projects .details-container>p:nth-child(2) {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -573,5 +761,12 @@ hr.bottom-nav-divider {
 
     .about-page .image-container {
         width: 100%;
+    }
+
+    .resume-page .main-content {
+        height: auto;
+        /* padding: 20px; */
+        padding-bottom: 136px;
+        overflow-y: auto;
     }
 }
