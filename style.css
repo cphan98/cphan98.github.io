@@ -363,8 +363,9 @@ hr.bottom-nav-divider {
 }
 
 /* disable scroll */
-body.home-page,
-body.contact-page {
+.home-page,
+.about-page, 
+.contact-page {
     overflow: hidden;
 }
 
@@ -375,7 +376,7 @@ body.contact-page {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: calc(100vh / 10) calc(100vw / 4);
+    padding: calc(100vh / 10) calc(100vw / 5);
 }
 
 /* main content */
@@ -406,6 +407,48 @@ body.contact-page {
     color: var(--tan);
 }
 
+.about-page .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+}
+
+.about-page .image-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-page .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-page .description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: scroll;
+}
+
+.about-page .description-container p {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
 .contact-page .contact-link-container {
     display: flex;
     flex-direction: row;
@@ -420,7 +463,7 @@ body.contact-page {
 
 .contact-page .contact-link-container a:hover {
     text-decoration: none;
-    color: var(--tan);
+    color: var(--kombu-green);
     transition: ease-in-out 0.3s;
 }
 
@@ -433,8 +476,38 @@ body.contact-page {
 
 /* responsive behaviour */
 @media (min-width: 769px) {
+    /* hide bottom navigation */
     .bottom-nav {
         display: none;
+    }
+}
+
+@media (max-width: 1279px) {
+    /* fill screen */
+    .about-page .main-content {
+        padding: 0;
+    }
+
+    .about-page .content-wrapper {
+        padding: calc(100vh / 10) calc(100vw / 5);
+    }
+
+    /* main content */
+    .about-page .content-wrapper {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .about-page .image-container {
+        width: 100%;
+    }
+
+    .about-page .image-container img {
+        width: 30%;
+    }
+
+    .about-page .description-container {
+        overflow-y: visible;
     }
 }
 
@@ -464,6 +537,11 @@ body.contact-page {
     .main-content.fill-screen {
         height: calc(100vh - 116px);
         margin-top: 0;
+        padding: 20px 20px 0;
+    }
+
+    .about-page .content-wrapper {
+        padding: 0;
     }
 
     /* hide top nav + show bottom nav on mobile */
@@ -473,5 +551,22 @@ body.contact-page {
 
     .bottom-nav {
         display: flex;
+    }
+
+    /* main content */
+    .main-content {
+        padding: 0;
+    }
+    .about-page .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-page .image-container{
+        width: 180vw;
+    }
+
+    .about-page .image-container {
+        width: 100%;
     }
 }
