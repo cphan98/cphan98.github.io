@@ -396,7 +396,7 @@ li>p {
 
 /* disable scroll */
 .home-page,
-/* .about-page,  */
+.work-page,
 .contact-page {
     overflow: hidden;
 }
@@ -489,6 +489,11 @@ li>p {
 
 .about-page .description-container p:last-child {
     margin-bottom: 0;
+}
+
+.work-page img {
+    width: 20%;
+    height: auto;
 }
 
 .resume-page .main-content {
