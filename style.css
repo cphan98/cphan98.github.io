@@ -394,6 +394,11 @@ hr.bottom-nav-divider {
     margin-top: 114px;
 }
 
+.home-page .intro-text {
+    max-width: 650px;
+    color: var(--cafe-noir);
+}
+
 .home-page .main-content-title-container,
 .contact-page .main-content-title-container {
     display: flex;
