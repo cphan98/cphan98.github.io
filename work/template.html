@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cynthia phan | project name</title>
+        <title>cynthia phan | project template</title>
         <link rel="stylesheet" href="../style.css">
     </head>
-    <body>
+    <body class="project-page">
         <!-- top nav bar (desktop) -->
         <nav class="top-nav">
             <div class="top-nav-container">
@@ -24,23 +24,115 @@
         </nav>
 
         <!-- Project Content -->
-        <main class="main-content fill-screen">
-            <section class="section">
-                <div class="container">
-                    <h2 class="section-title">Project Title 1</h2>
-                    <img src="https://via.placeholder.com/800x500" alt="Project 1 Image" class="project-image">
-                    <p class="project-description">
-                        This is a detailed description of Project 1. 
-                        Explain the problem you solved, the tools and technologies you used, 
-                        and what impact the project had. 
-                        You can also include challenges faced and how you overcame them.
-                    </p>
-                    <p class="project-tech">
-                        <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Node.js
-                    </p>
-                    <a href="../work.html" class="cta-button">← Back to Work</a>
+        <main class="main-content fill-screen centered">
+            <!-- header -->
+            <section class="header">
+                <h1 class="margot-title">project title</h1>
+                <div class="details-container">
+                    <p class="quicksand-subtitle">[role]</p>
+                    <p class="quicksand-subtitle">|</p>
+                    <p class="quicksand-subtitle">[duration]</p>
                 </div>
             </section>
+
+            <!-- overview -->
+            <section class="overview">
+                <p class="quicksand-normal-semibold">
+                    [project overview: brief, one-to-two paragraph summary. what was the project about? what was the final product?]
+                </p>
+            </section>
+
+            <!-- the problem -->
+            <section class="problem">
+                <h2 class="margot-h1">the problem</h2>
+                <p class="quicksand-normal-regular">
+                    [clearly define the challenge you were trying to solve. what pain points did users face, or what business objective was the project aiming to meet?]
+                </p>
+                <div class="image-container">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                </div>
+            </section>
+
+            <!-- my process -->
+            <section class="process">
+                <h2 class="margot-h1">my process</h2>
+                <!-- research & discovery -->
+                <section class="subsection">
+                    <h3 class="quicksand-large-bold">research & discovery</h3>
+                    <p class="quicksand-normal-regular">
+                        [mention any user interviews, surveys, or competitive analysis you conducted.]
+                    </p>
+                    <div class="image-container">
+                        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                    </div>
+                </section>
+                <!-- ideation -->
+                <section class="subsection">
+                    <h3 class="quicksand-large-bold">ideation</h3>
+                    <p class="quicksand-normal-regular">
+                        [show early sketched, wireframes, or user flows.]
+                    </p>
+                    <div class="image-container">
+                        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                    </div>
+                </section>
+                <!-- design & iteration -->
+                <section class="subsection">
+                    <h3 class="quicksand-large-bold">design & iteration</h3>
+                    <p class="quicksand-normal-regular">
+                        [briefly describe how you tested your ideas and how user feedback left to changes in your design.]
+                    </p>
+                    <div class="image-container">
+                        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                    </div>
+                </section>
+            </section>
+
+            <!-- key deliverables -->
+            <section class="deliverables">
+                <h2 class="margot-h1">key deliverables</h2>
+                <p class="quicksand-normal-regular">
+                    [highlight the specific outputs your created, such as high-fidelity mockups, a style guide, or a clickable prototype.]
+                </p>
+                <div class="image-container">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                </div>
+            </section>
+
+            <!-- the solution -->
+            <section class="solution">
+                <h2 class="margot-h1">the solution</h2>
+                <p class="quicksand-normal-regular">
+                    [present your final deisn. use high-quality images and descriptions to show the final product. explain how your design solves the problem you identified earlier.]
+                </p>
+                <div class="image-container">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="">
+                </div>
+            </section>
+
+            <!-- results & impact -->
+            <section class="results">
+                <h2 class="margot-h1">results & impact</h2>
+                <p class="quicksand-normal-regular">
+                    [if possible, include any quantifiable results. for example, did your design lead to a high conversion rate? did it improve the user satisfaction scores?]
+                </p>
+            </section>
+
+            <!-- reflections & learnings -->
+            <section class="learnings">
+                <h2 class="margot-h1">reflections & learnings</h2>
+                <p class="quicksand-normal-refular">
+                    [and by discussing what you learned and what you would do differntly in the future. this shows that you're a continuous learner and are capable of critical self-assessment.]
+                </p>
+            </section>
+
+            <!-- view all projects -->
+            <a class="projects-link" href="work.html" title="view all cynthia's projects" aria-label="link to cynthia's projects">
+                <div class="projects-link-container">
+                    <span class="return-icon"></span>
+                    <p class="quicksand-large-bold">view all projects</p>
+                </div>
+            </a>
         </main>
 
         <!-- bottom nav bar (mobile) -->

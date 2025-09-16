@@ -496,6 +496,96 @@ li>p {
     height: auto;
 }
 
+.project-page .main-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    height: fit-content;
+}
+
+.project-page h2 {
+    color: var(--kombu-green);
+}
+
+.project-page .header {
+    width: 100%;
+}
+
+.project-page .header h1 {
+    color: var(--cafe-noir);
+    text-align: center;
+}
+
+.project-page .header .details-container {
+    width: 100%;
+    color: var(--tan);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-page .problem,
+.project-page .process,
+.project-page .deliverables,
+.project-page .solution {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-page .subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-page .image-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-page .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-page .projects-link {
+    color: var(--moss-green);
+}
+
+.project-page .projects-link:hover {
+    color: var(--tan);
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.project-page .projects-link .projects-link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.project-page .projects-link .return-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('media/icons/left-arrow-moss-green.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.project-page .projects-link:hover .return-icon {
+    background-image: url(media/icons/left-arrow-tan.png);
+    transition: ease-in-out 0.3s;
+}
+
 .resume-page .main-content {
     align-items: flex-start;
     justify-content: flex-start;
