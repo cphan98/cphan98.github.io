@@ -518,11 +518,12 @@ li>p {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    grid-auto-rows: 1fr;
 }
 
-.work-page .card-container {
+.work-page .project-card {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -531,13 +532,13 @@ li>p {
 
 .work-page .project-wrapper {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: flex-start;
     align-self: stretch;
-    gap: 30px;
+    gap: 20px;
+    justify-content: space-between;
     padding: 15px;
     border: 1px solid var(--tan);
     border-radius: 20px;
@@ -1020,6 +1021,7 @@ li>p {
     }
 
     .about-page .main-content,
+    .work-page .main-content,
     .project-page .main-content,
     .resume-page .main-content {
         height: auto;
