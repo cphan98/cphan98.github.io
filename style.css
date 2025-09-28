@@ -119,6 +119,15 @@
     line-height: normal;
 }
 
+.quicksand-xlarge-bold {
+    font-family: "Quicksand";
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .margot-title {
     font-family: "Margot", sans-serif;
     font-size: 60px;
