@@ -695,7 +695,9 @@ li>p {
 .project-page .problem,
 .project-page .process,
 .project-page .deliverables,
+.project-page .goals,
 .project-page .solution,
+.project-page .next-steps,
 .project-page .learnings {
     width: 100%;
     display: flex;
