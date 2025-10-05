@@ -656,6 +656,7 @@ li>p {
 .work-page .project-link:hover .link-container {
     background-color: var(--moss-green);
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 .project-page .main-content {
