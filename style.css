@@ -589,7 +589,7 @@ li>p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    aspect-ratio: 16 / 12;
+    aspect-ratio: 4 / 3;
     border-radius: 15px;
 }
 
@@ -612,6 +612,12 @@ li>p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.work-page .project-title .title-container {
+    display: grid;
+    grid-template-columns: auto 30px;
+    column-gap: 10px;
 }
 
 .work-page .project-tags {
